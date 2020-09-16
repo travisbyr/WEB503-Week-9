@@ -24,5 +24,22 @@ li.addEventListener("click", function() {
     // finish is true
     if (finished) {
         removeButton.appendChild(document.createTextNode("remove"));
+        removeButton.classList = "deleteButton";
+        li.appendChild(removeButton);
+
+        removeButton.addEventListener("click",function() {
+            this.parentElement.remove();
+        });
+    } else {
+        this.getElementByClassName("deleteButton")[0].remove();
+    }
+});
+// revert input value back to nothing
+input.value = "";
+}
+
+function addListAfterCick() {
+    if (inputLength() > 0) {
+        
     }
 }

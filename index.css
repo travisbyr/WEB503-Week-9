@@ -1,0 +1,19 @@
+body {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+ul { 
+    list-style-type: none;
+}
+
+h1, p {
+    text-align: center;
+}
+
+#here li {
+    width: 10vw;
+    padding: 20px;
+    border: 1px solid black;
+}
+
